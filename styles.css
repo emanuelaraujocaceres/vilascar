@@ -1,0 +1,175 @@
+/* styles.css */
+
+/* CSS para o fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('logo.png'); /* Imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    color: white;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+/* Estilos para a área do título */
+.header {
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo preto com maior transparência */
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%; /* Garante que o conteúdo não exceda a largura da tela */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.whatsapp {
+    background-color: #25D366; /* Cor verde do WhatsApp */
+}
+
+.whatsapp:hover {
+    background-color: #1EBE56; /* Cor verde escuro do WhatsApp */
+}
+
+.location {
+    background-color: #4285F4; /* Cor azul do Google Maps */
+}
+
+.location:hover {
+    background-color: #357AE8; /* Cor azul escuro do Google Maps */
+}
+
+.services, .hours {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente com maior transparência */
+    margin: 10px auto;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.services h2, .hours h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff0000; /* Cor dourada para os preços */
+}
+
+.hours p {
+    font-size: 1em;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 100px; /* Ajuste para dispositivos menores */
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+
+    .services h2, .hours h2 {
+        font-size: 1.5em;
+    }
+
+    .services li, .hours p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px; /* Ajuste para dispositivos muito pequenos */
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .button {
+        padding: 6px 10px;
+        font-size: 0.7em;
+    }
+
+    .services h2, .hours h2 {
+        font-size: 1.2em;
+    }
+
+    .services li, .hours p {
+        font-size: 0.8em;
+    }
+}
