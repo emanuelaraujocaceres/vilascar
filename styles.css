@@ -16,7 +16,7 @@ body {
 
 /* Estilos para a área do título */
 .header {
-    background-color: rgba(0, 0, 0, 0.2); /* Fundo preto com maior transparência */
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo preto com maior transparência */
     padding: 20px; /* Ajuste o padding conforme necessário */
     position: relative;
     text-align: center;
